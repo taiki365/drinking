@@ -1,1 +1,1 @@
-son.partial! "parties/party", party: @party
+json.partial! "parties/party", party: @party
