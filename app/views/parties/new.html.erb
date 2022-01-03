@@ -3,3 +3,14 @@
 <%= render 'form', party: @party %>
 
 <%= link_to 'Back', parties_path %>
+
+<div class='party-form'>
+  <h1>新規飲み会</h1>
+  <%=form_with model: @party, local: true do |f|%>
+    <div class='party-form__field'>
+      <div class='party-form__field--left'>
+        <%= f.label :飲み会名称, class: 'party-form__label'%>
+      </div>
+      <div class='party-form__field--right'>
+        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: '飲み会名を入力してください'%>
+      </div>
