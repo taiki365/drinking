@@ -1,6 +1,11 @@
 <h1>Editing Party</h1>
 
 <%= render 'form', party: @party %>
-
+  <select>
+    <option value="">参加者を選択してください</option>
+        <% User.all.each do |user| %>
+          <option><%= user.name %></option>
+        <% end %>
+  </select>
 <%= link_to 'Show', @party %> |
 <%= link_to 'Back', parties_path %>
