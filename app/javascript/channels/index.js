@@ -3,4 +3,4 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
-console.log("hello")
+console.log(3+3)
