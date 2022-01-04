@@ -2,6 +2,7 @@
   <% if party.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(party.errors.count, "error") %> prohibited this party from being saved:</h2>
+      <script src="index.js"></script>
 
       <ul>
         <% party.errors.full_messages.each do |message| %>
