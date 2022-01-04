@@ -3,4 +3,5 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
-console.log("3+3")
+let name = "チェン";
+console.log(name)
