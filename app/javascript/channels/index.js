@@ -6,7 +6,7 @@ channels.keys().forEach(channels)
 let player = "チェン";
 console.log(player);
 player = "バース";
-let number = 2
+let number = 2;
 number = 5;
 console.log(number);
 number += 5;
